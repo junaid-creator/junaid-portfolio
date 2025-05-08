@@ -10,6 +10,7 @@ import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
 import ProfileImage from '@/app/assets/profile.webp'
+import CV from '../public/'
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
