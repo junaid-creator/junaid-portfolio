@@ -1,10 +1,11 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
+import { FaReact,FaAndroid } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+// import creatria from "@/public/creatria.webp";
+// import tbtImg from "@/public/tbt.png";
+// import rmsImg from "@/public/rms.png";
+// import qmsImg from "@/public/qms.png";
 
 export const links = [
   {
@@ -35,52 +36,70 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated",
-    location: "UET Taxila, Pakistan",
+    title: "Front End Developer",
+    location: "Gulfway Marketing - Dubai",
     description:
-      "I have completed by BS in Software Engineering.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2014-2018",
-  },
-  {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
-    description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
-  },
-  {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
-    description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "Design and develop responsive web and mobile applications using React, Next.js, and React Native",
     icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "2023 - Present",
   },
+  {
+    title: "UI / UX Developer",
+    location: "eLife America - Sri Lanka",
+    description:
+      "Collaborated with designers and developers to build responsive, user-friendly interfaces.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2023 Feb - 2023 Sep",
+  },
+  {
+    title: "Front End Developer",
+    location: "Cristal Code - Sri Lanka",
+    description:
+      "Built and optimized cross-platform mobile applications with React Native, ensuring smooth performance, engaging user interfaces, and seamless integration with backend.",
+    icon: React.createElement(FaAndroid),
+    date: "2022 Jan - 2023 Sep",
+  },
+
 ] as const;
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Creatria",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+    "Cross-platform app built with React Native, TypeScript, and GraphQL. Focused on frontend UI and smooth user experience.",
+  
+    tags: ["React Native", "TypeScript", "GraphQL", "Tailwind","Node JS"],
+    // imageUrl: creatria,
+    projectUrl : "https://www.clipsi.app/"
+    
   },
   {
-    title: "rmtDev",
+    title: "Text Based Ticketing System",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+    "Web app for creating support tickets via SMS with auto-generated ticket IDs.",
+
+
+    tags: ["Vue JS", "Nunjucks", "Node JS", "Mongo DB", "Sails JS"],
+    // imageUrl: tbtImg,
+    projectUrl: "https://tbt.elifeamerica.com/"
   },
   {
-    title: "Word Analytics",
+    title: "Rider Management System ",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+    "Rider Management System for onboarding, licenses, assignments, and asset tracking.",  
+    tags: ["React", "Next.js", "node js", "Tailwind", "axios"],
+    // imageUrl: rmsImg,
+    projectUrl:"https://rmsfront.gwmarketing.ae"
+  },
+  {
+    title: "Queue Management System ",
+    description:
+    "Queue system with smart tokens and RMS integration to improve flow and cut wait times.",
+    
+    tags: ["React", "Next.js", "node js", "Tailwind", "axios"],
+    // imageUrl: qmsImg,
+    projectUrl:"https://qmstesting.gwmarketing.ae"
+
   },
 ] as const;
 
@@ -90,11 +109,11 @@ export const skillsData = [
   "JavaScript",
   "TypeScript",
   "React",
+  "React Native",
   "Next.js",
   "Node.js",
   "Git",
   "Tailwind",
-  "Prisma",
   "MongoDB",
   "Redux",
   "GraphQL",

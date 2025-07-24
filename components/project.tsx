@@ -5,13 +5,16 @@ import { projectsData } from "@/lib/data";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 
-type ProjectProps = (typeof projectsData)[number];
+type ProjectProps = (typeof projectsData)[number] & {
+  projectUrl?: string; // Add optional URL prop
+};
 
 export default function Project({
   title,
   description,
   tags,
   imageUrl,
+  projectUrl 
 }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -20,6 +23,12 @@ export default function Project({
   });
   const scaleProgess = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
   const opacityProgess = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
+
+  const handlePreview = () => {
+    if (projectUrl) {
+      window.open(projectUrl, '_blank', 'noopener,noreferrer');
+    }
+  };
 
   return (
     <motion.div
@@ -46,6 +55,33 @@ export default function Project({
               </li>
             ))}
           </ul>
+          
+          {/* Preview Button - Hidden by default, shows on hover */}
+          {projectUrl && (
+            <div className="div">
+
+        
+            <button
+              onClick={handlePreview}
+              className=" mt-4 inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm border border-white/20 text-gray-700 dark:text-white font-medium text-sm rounded-full opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 hover:bg-white/20 hover:border-white/30 hover:scale-105 hover:shadow-lg transition-all duration-300 ease-out active:scale-95 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:focus:ring-offset-gray-800"
+            >
+              <svg 
+                className="w-4 h-4" 
+                fill="none" 
+                stroke="currentColor" 
+                viewBox="0 0 24 24"
+              >
+                <path 
+                  strokeLinecap="round" 
+                  strokeLinejoin="round" 
+                  strokeWidth={2} 
+                  d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" 
+                />
+              </svg>
+              Preview
+            </button>
+            </div>
+          )}
         </div>
 
         <Image
