@@ -1,11 +1,20 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact,FaAndroid } from "react-icons/fa";
-import { LuGraduationCap } from "react-icons/lu";
+import GulfwayImage from "../app/assets/Gulfway.png";
+import ARDImage from "../app/assets/ARD.png";
+import EWcargoImage from "../app/assets/EWcargo.png";
+import GwAutoImage from "../app/assets/GWauto.png";
+import GwDeliveryImage from "../app/assets/gwDelivery.png";
+import GwMarketingImage from "../app/assets/GwMarketing.png";
+import GwotImage from "../app/assets/gwot.png";
+import GwTTImage from "../app/assets/gwtt.png";
+import PetologyImage from "../app/assets/Petology.png";
 // import creatria from "@/public/creatria.webp";
 // import tbtImg from "@/public/tbt.png";
 // import rmsImg from "@/public/rms.png";
 // import qmsImg from "@/public/qms.png";
+
 
 export const links = [
   {
@@ -69,8 +78,8 @@ export const projectsData = [
     "Cross-platform app built with React Native, TypeScript, and GraphQL. Focused on frontend UI and smooth user experience.",
   
     tags: ["React Native", "TypeScript", "GraphQL", "Tailwind","Node JS"],
-    // imageUrl: creatria,
-    projectUrl : "https://www.clipsi.app/"
+     imageUrl: GulfwayImage,
+    projectUrl : "https://gulfwaygroup.ae/"
     
   },
   {
@@ -80,16 +89,16 @@ export const projectsData = [
 
 
     tags: ["Vue JS", "Nunjucks", "Node JS", "Mongo DB", "Sails JS"],
-    // imageUrl: tbtImg,
-    projectUrl: "https://tbt.elifeamerica.com/"
+    imageUrl: ARDImage,
+    projectUrl: "https://ardinvestments.com/"
   },
   {
     title: "Rider Management System ",
     description:
     "Rider Management System for onboarding, licenses, assignments, and asset tracking.",  
     tags: ["React", "Next.js", "node js", "Tailwind", "axios"],
-    // imageUrl: rmsImg,
-    projectUrl:"https://rmsfront.gwmarketing.ae"
+    imageUrl: EWcargoImage,
+    projectUrl:"https://ewcargo.ae/"
   },
   {
     title: "Queue Management System ",
@@ -97,8 +106,58 @@ export const projectsData = [
     "Queue system with smart tokens and RMS integration to improve flow and cut wait times.",
     
     tags: ["React", "Next.js", "node js", "Tailwind", "axios"],
-    // imageUrl: qmsImg,
-    projectUrl:"https://qmstesting.gwmarketing.ae"
+    imageUrl: GwAutoImage,
+    projectUrl:"https://gwauto.ae/"
+
+  },
+  {
+    title: "Queue Management System ",
+    description:
+    "Queue system with smart tokens and RMS integration to improve flow and cut wait times.",
+    
+    tags: ["React", "Next.js", "node js", "Tailwind", "axios"],
+    imageUrl: GwDeliveryImage,
+    projectUrl:"https://gwdelivery.ae/"
+
+  },
+  {
+    title: "Queue Management System ",
+    description:
+    "Queue system with smart tokens and RMS integration to improve flow and cut wait times.",
+    
+    tags: ["React", "Next.js", "node js", "Tailwind", "axios"],
+    imageUrl: GwMarketingImage,
+    projectUrl:"https://gwmarketing.ae/"
+
+  },
+  {
+    title: "Queue Management System ",
+    description:
+    "Queue system with smart tokens and RMS integration to improve flow and cut wait times.",
+    
+    tags: ["React", "Next.js", "node js", "Tailwind", "axios"],
+    imageUrl: GwotImage,
+    projectUrl:"https://gwot.ae/"
+
+  },
+  {
+    title: "Queue Management System ",
+    description:
+    "Queue system with smart tokens and RMS integration to improve flow and cut wait times.",
+    
+    tags: ["React", "Next.js", "node js", "Tailwind", "axios"],
+    imageUrl: GwTTImage,
+    projectUrl:"https://gwtt.ae/"
+
+  },
+  {
+    title: "Queue Management System ",
+    description:
+    "Queue system with smart tokens and RMS integration to improve flow and cut wait times.",
+    
+    tags: ["React", "Next.js", "node js", "Tailwind", "axios"],
+    imageUrl: PetologyImage,
+    projectUrl:"https://petology.ae/"
 
   },
 ] as const;
